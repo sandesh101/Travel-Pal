@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'places.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -38,23 +39,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   'Discover',
                   style: TextStyle(fontSize: 30, color: Colors.white),
                 ),
-                Divider(
-                  height: 10,
-                  thickness: 0.0,
-                ),
+                SizedBox(height: 20),
                 Text(
                   'Explore the best places in the world!',
                   style: TextStyle(fontSize: 18, color: Colors.white10),
                 ),
-                Divider(
-                  height: 40,
-                  thickness: 0.0,
-                ),
+                SizedBox(height: 40),
                 CupertinoSearchTextField(
                   placeholder: 'Search your trip',
                   padding: EdgeInsets.all(16.0),
                   borderRadius: BorderRadius.circular(40),
-                )
+                ),
+                SizedBox(height: 40),
+                ImageSlider(),
               ],
             ),
           ),
