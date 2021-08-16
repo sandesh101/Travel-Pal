@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'places.dart';
+import 'trending.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -52,6 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 SizedBox(height: 40),
                 ImageSlider(),
+                Trending(),
               ],
             ),
           ),
