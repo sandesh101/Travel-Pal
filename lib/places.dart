@@ -52,40 +52,64 @@ class _ImageSliderState extends State<ImageSlider> {
             ],
           ),
           SizedBox(height: 30.0),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          Wrap(
+            direction: Axis.horizontal,
             children: [
-              Container(
-                decoration: BoxDecoration(
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      image: DecorationImage(
+                        image: AssetImage('images/tajmahal.jpg'),
+                        fit: BoxFit.cover,
+                      )),
+                  height: 200,
+                  width: 200,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     image: DecorationImage(
-                      image: AssetImage('images/tajmahal.jpg'),
+                      image: AssetImage('images/eifeltower.jpg'),
                       fit: BoxFit.cover,
-                    )),
-                height: 200,
-                width: 200,
-              ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  image: DecorationImage(
-                    image: AssetImage('images/eifeltower.jpg'),
-                    fit: BoxFit.cover,
+                    ),
                   ),
+                  height: 200,
+                  width: 200,
                 ),
-                height: 200,
-                width: 200,
               ),
-              // Container(
-              //   decoration: BoxDecoration(
-              //     borderRadius: BorderRadius.circular(20),
-              //     // color: Colors.red,
-              //     image:
-              //         DecorationImage(image: AssetImage('images/everest.jpg')),
-              //   ),
-              //   height: 200,
-              //   width: 200,
-              // ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    image: DecorationImage(
+                      image: AssetImage('images/everest.jpg'),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  height: 200,
+                  width: 200,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    image: DecorationImage(
+                      image: AssetImage('images/everest.jpg'),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  height: 200,
+                  width: 200,
+                ),
+              ),
             ],
           )
         ],
