@@ -102,7 +102,7 @@ class _ImageSliderState extends State<ImageSlider> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     image: DecorationImage(
-                      image: AssetImage('images/everest.jpg'),
+                      image: AssetImage('images/london.jpg'),
                       fit: BoxFit.cover,
                     ),
                   ),
